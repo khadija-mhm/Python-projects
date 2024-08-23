@@ -1,3 +1,5 @@
+Following 100 python projects in 100 days.
+
 Day 1: Band Name Generator
 
 Day 2: Tip Calculator
