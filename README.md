@@ -27,3 +27,5 @@ Day 14: Higher Lower Game
 
 Intermediate Python
 Day 15: Coffee Machine Project
+
+Day 16: OOP Coffee Machine
