@@ -29,3 +29,7 @@ Intermediate Python
 Day 15: Coffee Machine Project
 
 Day 16: OOP Coffee Machine
+
+Day 17: OOP Quiz
+
+Day 18: the Hirst Pianting
