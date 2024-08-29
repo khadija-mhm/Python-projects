@@ -1,0 +1,51 @@
+
+import colorgram
+import turtle
+from turtle import Turtle, Screen
+import random
+
+#how I attained colors: colors = colorgram.extract('hirst.jpg', 30)
+#rgb_colors = []
+#for color in colors:
+   # r = color.rgb.r
+   # g = color.rgb.g
+   # b = color.rgb.b
+   # new_color = (r, g, b)
+   # rgb_colors.append(new_color)
+   #print(rgb_colors)
+color_list= [(236, 35, 108), (145, 28, 66), (239, 75, 35), (7, 148, 95), (220, 171, 45), (183, 158, 47), (45, 191, 232), (28, 127, 194), (254, 223, 0), (125, 192, 78), (85, 27, 91), (243, 218, 56), (178, 40, 98), (44, 170, 114), (211, 132, 166), (206, 57, 35), (239, 162, 193), (145, 27, 25), (243, 167, 156), (163, 211, 178), (26, 187, 225), (6, 116, 54), (138, 210, 232), (74, 135, 184), (170, 191, 221), (114, 10, 8)]
+
+#10 by ten rows of spots, dot= 20 in size, spaced around by 50
+turtle.colormode(255)
+t = Turtle()
+t.hideturtle()
+
+def row():
+    for _ in range(10):
+        color_rand = random.choice(color_list)
+        t.pen()
+        t.fillcolor(color_rand)
+        t.pencolor(color_rand)
+        t.dot(20)
+        t.pu()
+        t.forward(50)
+        t.pd()
+
+for _ in range(5):
+    row()
+    t.pu()
+    t.backward(50)
+    t.right(90)
+    t.forward(50)
+    t.right(90)
+    t.pd()
+    row()
+    t.pu()
+    t.backward(50)
+    t.left(90)
+    t.forward(50)
+    t.left(90)
+    t.pd()
+
+my_screen = Screen()
+my_screen.exitonclick()
