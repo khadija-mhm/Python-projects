@@ -1,0 +1,5 @@
+Recreated the famous Hirst painting of dots (see jpg),as requested in Dr. Angela Yu's Python Bootcamp.
+Here's what this project requires:
+
+ - Extract colors using colorgram
+ - Use turtle to paint dots that are 20 in size and 50 in distance from one another, 10 rows by 10 columns
